@@ -97,4 +97,3 @@ Siga os passos abaixo para rodar o projeto localmente:
 ## Licença
 
 Este projeto está licenciado sob a [MIT License](LICENSE).
-dades específicas do seu projeto. Se quiser que eu inclua mais detalhes ou ajuste algo, é só avisar!
