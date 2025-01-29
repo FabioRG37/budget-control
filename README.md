@@ -6,7 +6,7 @@ Este é um projeto de controle financeiro para registrar e gerenciar despesas, c
 
 - **Laravel**: Framework PHP para desenvolvimento web.
 - **MySQL**: Banco de dados relacional para armazenar as informações.
-- **Vue.js** (futuramente): Para a interface do usuário (caso você vá integrar Vue.js posteriormente).
+- **Vue.js** (futuramente): Para a interface do usuário.
 
 ## Requisitos
 
@@ -94,6 +94,3 @@ Siga os passos abaixo para rodar o projeto localmente:
 4. Faça o push para a branch (`git push origin minha-alteracao`)
 5. Abra um Pull Request
 
-## Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
