@@ -1,7 +1,3 @@
-Claro! O README é importante para explicar o projeto e como configurá-lo. Vou te sugerir uma estrutura básica para o seu projeto de controle financeiro com Laravel.
-
----
-
 # Budget Control
 
 Este é um projeto de controle financeiro para registrar e gerenciar despesas, categorias e relatórios financeiros.
