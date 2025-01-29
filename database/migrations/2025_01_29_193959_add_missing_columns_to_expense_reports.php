@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('expense_reports', function (Blueprint $table) {
-            $table->id();
+        Schema::table('expense_reports', function (Blueprint $table) {
             $table->foreignId('category_id', 10, 2)->constrained()->onDelete('cascade');
             $table->decimal('total_expense', 10, 2);
-            $table->date('year');
-            $table->timestamps();
+            $table->year('year');
         });
     }
 
@@ -25,6 +23,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('expense_reports');
+        Schema::table('expense_reports', function (Blueprint $table) {
+            $table->dropColumn(['category_id', 'total_expense', 'year']);
+        });
     }
 };

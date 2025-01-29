@@ -13,9 +13,6 @@ return new class extends Migration
     {
         Schema::create('expense_reports', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('category_id', 10, 2)->constrained()->onDelete('cascade');
-            $table->decimal('total_expense', 10, 2);
-            $table->date('year');
             $table->timestamps();
         });
     }

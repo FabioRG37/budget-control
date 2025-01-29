@@ -11,11 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('expense_reports', function (Blueprint $table) {
+        Schema::create('budgets', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('category_id', 10, 2)->constrained()->onDelete('cascade');
-            $table->decimal('total_expense', 10, 2);
-            $table->date('year');
             $table->timestamps();
         });
     }
@@ -25,6 +22,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('expense_reports');
+        Schema::dropIfExists('budgets');
     }
 };
