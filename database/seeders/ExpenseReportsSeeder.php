@@ -16,7 +16,7 @@ class ExpenseReportsSeeder extends Seeder
         ExpenseReports::create([
             'category_id' => 1,
             'total_expense' => 200.00,
-            'year' => now();
+            'year' => date("Y")
         ]);
     }
 }

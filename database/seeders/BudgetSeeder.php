@@ -15,8 +15,8 @@ class BudgetSeeder extends Seeder
     {
         Budget::create([
             'category_id' => 1,
-            'limit' => 500.00,
-            'month' => '2025-01'
+            'budgeted_amount' => 500.00,
+            'year' => date("Y")
         ]);
     }
 }
