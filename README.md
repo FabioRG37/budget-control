@@ -94,3 +94,8 @@ Siga os passos abaixo para rodar o projeto localmente:
 4. Faça o push para a branch (`git push origin minha-alteracao`)
 5. Abra um Pull Request
 
+## Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
