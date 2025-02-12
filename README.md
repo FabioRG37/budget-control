@@ -1,12 +1,14 @@
-# Budget Control
+# 💰 Budget Control  
 
-Este é um projeto de controle financeiro para registrar e gerenciar despesas, categorias e relatórios financeiros.
+**Budget Control** é um sistema de controle financeiro desenvolvido em Laravel e Vue.js, que permite gerenciar transações, relatórios de despesas e orçamentos de forma eficiente.  
 
-## Tecnologias utilizadas
-
-- **Laravel**: Framework PHP para desenvolvimento web.
-- **MySQL**: Banco de dados relacional para armazenar as informações.
-- **Vue.js** (futuramente): Para a interface do usuário.
+## 🚀 Tecnologias Utilizadas  
+- **PHP 8.x**  
+- **Laravel 10.x**  
+- **Vue.js**  
+- **MySQL**  
+- **Inertia.js**  
+- **Tailwind CSS**  
 
 ## Requisitos
 
@@ -17,66 +19,51 @@ Antes de começar, certifique-se de ter as seguintes ferramentas instaladas:
 - **MySQL** (ou MariaDB)
 - **Node.js** (caso deseje usar Vue.js no futuro)
 
-## Instalação
+## 📥 Instalação  
 
-Siga os passos abaixo para rodar o projeto localmente:
-
-1. Clone o repositório:
-
+1. Clone este repositório:  
    ```bash
-   git clone https://github.com/seu-usuario/budget-control.git
+   git clone https://github.com/FabioRG37/budget-control.git
+   ```
+2. Acesse a pasta do projeto:  
+   ```bash
    cd budget-control
    ```
-
-2. Instale as dependências do Composer:
-
+3. Instale as dependências do Laravel:  
    ```bash
    composer install
    ```
-
-3. Copie o arquivo `.env.example` para `.env`:
-
+4. Instale as dependências do frontend:  
+   ```bash
+   npm install
+   ```
+5. Copie o arquivo de configuração:  
    ```bash
    cp .env.example .env
    ```
-
-4. Configure o arquivo `.env` com as credenciais do seu banco de dados:
-
-   ```dotenv
-   DB_CONNECTION=mysql
-   DB_HOST=127.0.0.1
-   DB_PORT=3306
-   DB_DATABASE=budget
-   DB_USERNAME=root
-   DB_PASSWORD=senha_do_banco
-   ```
-
-5. Gere a chave de aplicativo:
-
+6. Configure as credenciais do banco de dados no arquivo **.env**  
+7. Gere a chave do aplicativo:  
    ```bash
    php artisan key:generate
    ```
-
-6. Execute as migrações para criar as tabelas no banco de dados:
-
+8. Execute as migrações e seeds:  
    ```bash
-   php artisan migrate
+   php artisan migrate --seed
    ```
-
-7. (Opcional) Se você tiver seeds para popular o banco de dados com dados iniciais:
-
-   ```bash
-   php artisan db:seed
-   ```
-
-## Utilização
-
-- Acesse o aplicativo pelo navegador: `http://localhost:8000`
-- Use o comando Artisan para rodar o servidor local:
-
+9. Inicie o servidor local:  
    ```bash
    php artisan serve
    ```
+
+## 🔑 Autenticação  
+O sistema possui um fluxo completo de autenticação (login, registro e recuperação de senha) utilizando Laravel Breeze e Inertia.js.  
+
+## 📌 Funcionalidades  
+✅ Gerenciamento de categorias  
+✅ Cadastro e listagem de transações financeiras  
+✅ Geração de relatórios de despesas  
+✅ Criação e controle de orçamentos  
+✅ Autenticação de usuários  
 
 ## Estrutura de Diretórios
 
@@ -86,16 +73,23 @@ Siga os passos abaixo para rodar o projeto localmente:
 - **resources/views/**: Contém as views Blade (para visualização).
 - **routes/web.php**: Define as rotas da aplicação.
 
-## Contribuição
+## 🛠️ Como Contribuir  
+1. Faça um fork do projeto  
+2. Crie uma branch com sua feature:  
+   ```bash
+   git checkout -b minha-feature
+   ```
+3. Commit suas alterações:  
+   ```bash
+   git commit -m "Adicionando nova funcionalidade"
+   ```
+4. Envie para o repositório:  
+   ```bash
+   git push origin minha-feature
+   ```
+5. Abra um Pull Request  
 
-1. Fork o repositório
-2. Crie uma branch para suas mudanças (`git checkout -b minha-alteracao`)
-3. Comite suas alterações (`git commit -am 'Adicionando nova funcionalidade'`)
-4. Faça o push para a branch (`git push origin minha-alteracao`)
-5. Abra um Pull Request
-
-## Licença
-
-Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
+## 📄 Licença  
+Este projeto está sob a licença MIT.  
 
 ---
